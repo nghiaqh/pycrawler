@@ -1,0 +1,23 @@
+PREREQUIREMENTS
+1. Python 2.6
+2. MySQL 5.0
+
+INSTALLATION
+1. Create a database named sitelinks
+2. Update the database configuration in config.py (hostname, username, password)
+3. Run setup.py: python setup.python
+
+TO START CRAWLING
+Run PyCrawler.py:
+- the crawler will start with the first URL in queue (initialized when setup),
+- parses the crawled html to get links & adds them to queue.
+- It repeats above steps until there's no URLs in queue.
+
+- URLs are saved into database with status: 
+    200 OK
+    302/301 Redirect
+    404 Not found
+    403 Not allowed
+    0 Exception when request the URL
+
+
