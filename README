@@ -6,6 +6,9 @@ INSTALLATION
 1. Create a database named sitelinks
 2. Update the database configuration in config.py (hostname, username, password)
 3. Run setup.py: python setup.python
+4. Update config.py:
+   - crawl_domain: domain you need to crawl.
+   - fileext: file types you don't want to crawl.
 
 TO START CRAWLING
 Run PyCrawler.py:
